@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muskan'sBirthday Surprise ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Welcome Screen -->
+    <section class="welcome-screen">
+
+        <div class="sparkle sparkle-1">✦</div>
+        <div class="sparkle sparkle-2">✧</div>
+        <div class="sparkle sparkle-3">✦</div>
+
+        <div class="hearts">
+            <span>♡</span>
+            <span>♥</span>
+            <span>♡</span>
+            <span>♥</span>
+        </div>
+
+        <div class="welcome-content">
+
+            <p class="small-title">✨ A LITTLE SURPRISE FOR YOU ✨</p>
+
+            <h1>
+                Hey, Muskan! 
+                <span>❤️</span>
+            </h1>
+
+            <p class="subtitle">
+                Someone made something special<br>
+                just for you...
+            </p>
+
+            <button id="openButton">
+                🎁 Open Your Surprise
+            </button>
+
+            <p class="hint">
+                Tap the button... 👀
+            </p>
+
+        </div>
+
+    </section>
+    <!-- Balloon Game -->
+<section class="balloon-screen" id="balloonScreen">
+
+    <div class="game-content">
+
+        <p class="game-label">🎈 FIRST CHALLENGE 🎈</p>
+
+        <h2>Pop The Balloons!</h2>
+
+        <p class="game-instruction">
+            Pop all the balloons to unlock your next surprise. 👀
+        </p>
+
+        <div class="balloon-area" id="balloonArea">
+
+            <button class="balloon balloon-1">🎈</button>
+
+            <button class="balloon balloon-2">🎈</button>
+
+            <button class="balloon balloon-3">🎈</button>
+
+            <button class="balloon balloon-4">🎈</button>
+
+            <button class="balloon balloon-5">🎈</button>
+
+            <button class="balloon balloon-6">🎈</button>
+
+        </div>
+
+        <p class="balloon-counter">
+            Balloons left: <span id="balloonCount">6</span>
+        </p>
+        <div class="balloon-success" id="balloonSuccess">
+
+    <div class="success-icon">✨</div>
+
+    <h3>You Did It! 🎉</h3>
+
+    <p>
+        You popped all the balloons!<br>
+        But your birthday surprise isn't over yet... 👀
+    </p>
+
+    <button id="continueButton">
+        Continue → 🎂
+    </button>
+
+</div>
+
+    </div>
+
+</section>
+<!-- =========================
+     CAKE GAME
+========================= -->
+
+<section class="cake-screen" id="cakeScreen">
+
+    <div class="cake-content">
+
+        <p class="cake-label">
+            🎂 SECOND CHALLENGE 🎂
+        </p>
+
+        <h2>
+           Make A Wish, Musu! 🎂✨
+        </h2>
+
+        <p class="cake-instruction">
+            Your birthday cake is waiting for you...
+            <br>
+            Now blow the candle! 💨
+        </p>
+
+
+        <!-- Cake -->
+
+        <div class="cake-container">
+
+            <!-- Candle -->
+
+            <div class="candle">
+
+                <div class="flame" id="flame">
+                    🔥
+                </div>
+
+                <div class="candle-stick">
+                </div>
+
+            </div>
+
+
+            <!-- Cake Body -->
+
+            <div class="cake">
+
+                <div class="icing">
+                </div>
+
+                <div class="cake-layer">
+                </div>
+
+                <div class="cake-bottom">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Blow Button -->
+
+        <button id="blowButton">
+
+            💨 Blow The Candle
+
+        </button>
+
+
+        <p class="blow-hint">
+            Take a breath... and make a wish! 🥹
+        </p>
+
+
+        <!-- Hidden Success Message -->
+
+        <div class="cake-success" id="cakeSuccess">
+
+            <div class="success-stars">
+                ✨ 🎉 ✨
+            </div>
+
+            <h3>
+                Wish Made! 💖
+            </h3>
+
+            <p>
+                May all your wishes come true. ❤️
+            </p>
+
+            <button id="cakeContinueButton">
+                Continue → 💌
+            </button>
+
+        </div>
+
+    </div>
+
+</section> 
+</section>
+
+
+<!-- LETTER SCREEN -->
+
+<section class="letter-screen" id="letterScreen">
+
+    <div class="letter-content">
+
+        <div class="letter-decoration">
+            💌
+        </div>
+
+        <p class="letter-label">
+            A LITTLE MESSAGE FOR YOU
+        </p>
+
+        <h2>
+            Dear Muskan, ❤️
+        </h2>
+
+        <div class="letter-paper">
+
+            <p id="letterText"></p>
+
+            <p class="letter-signature">
+    With lots of love,<br>
+    <span>Archu ❤️</span>
+    </p>
+
+        </div>
+
+        <button id="memoryButton">
+            Continue → 📸
+        </button>
+
+    </div>
+
+</section>
+ 
+<!-- =========================
+     MEMORY GALLERY
+========================= -->
+
+<section class="memory-screen" id="memoryScreen">
+
+    <div class="memory-content">
+
+        <div class="memory-top-icon">
+            📸
+        </div>
+
+        <p class="memory-label">
+            OUR LITTLE STORY
+        </p>
+
+        <h2>
+            One Year, So Many Memories ❤️
+        </h2>
+
+        <p class="memory-intro">
+            From a random picture to becoming best friends...
+            here's a little piece of our story. 🫶
+        </p>
+
+
+        <!-- PHOTO GRID -->
+
+        <div class="photo-grid">
+
+
+            <!-- PHOTO 1 -->
+
+            <div class="photo-card">
+
+                <div class="photo-wrapper">
+
+                    <img
+                        src="images/first-photo.jpeg"
+                        alt="Our first photo"
+                    >
+
+                </div>
+
+                <div class="photo-caption">
+
+                    <span>
+                        MEMORY 01
+                    </span>
+
+                    <h3>
+                        Where It All Began 💕
+                    </h3>
+
+                    <p>
+                        We first met at Amity, just as classmates.
+                        Little did I know that this simple beginning
+                        would slowly turn into one of the most special
+                        friendships of my life. ❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 2 -->
+
+            <div class="photo-card">
+
+                <div class="photo-wrapper">
+
+                    <img
+                        src="images/amity.jpeg"
+                        alt="Amity memory"
+                    >
+
+                </div>
+
+                <div class="photo-caption">
+
+                    <span>
+                        MEMORY 02
+                    </span>
+
+                    <h3>
+                        And Then Came Amity 🏫
+                    </h3>
+
+                    <p>
+                        We first met at Amity, in the same class,
+                        and slowly became part of the same little
+                        group of four — me, you, Kashish and Nikee.
+                        What started as simple classmates being together
+                        slowly turned into so many beautiful memories. 💕
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 3 -->
+
+            <div class="photo-card">
+
+                <div class="photo-wrapper">
+
+                    <img
+                        src="images/funny-memory.jpeg"
+                        alt="Funny memory"
+                    >
+
+                </div>
+
+                <div class="photo-caption">
+
+                    <span>
+                        MEMORY 03
+                    </span>
+
+                    <h3>
+                        From Lazy Days to Foodie Ways 🍕😂                     
+                    </h3>
+
+                    <p>
+                        Musu is officially one of us now — a foodie! 😂❤️
+                        From being super lazy to somehow becoming just as food-obsessed as me,
+                        our food plans have become an important part of our friendship.
+                        And honestly, doing even the simplest things together somehow becomes fun. 🥹💕
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 4 -->
+
+            <div class="photo-card">
+
+                <div class="photo-wrapper">
+
+                    <img
+                        src="images/memory-1.jpeg"
+                        alt="Best friend memory"
+                    >
+
+                </div>
+
+                <div class="photo-caption">
+
+                    <span>
+                        MEMORY 04
+                    </span>
+
+                    <h3>
+                        Our Bluetooth Is Always Connected 🔵😂                    
+                    </h3>
+
+                    <p>
+                        One look at a third person and somehow
+                        you already know exactly what I am
+                        thinking. No explanation needed. 😂
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 5 -->
+
+            <div class="photo-card">
+
+                <div class="photo-wrapper">
+
+                    <img
+                        src="images/memory-2.jpeg"
+                        alt="Best friends"
+                    >
+
+                </div>
+
+                <div class="photo-caption">
+
+                    <span>
+                        MEMORY 05
+                    </span>
+
+                    <h3>
+                        Our Bluetooth Is Too Strong 😂❤️                    
+                    </h3>
+
+                    <p>
+                        Same thoughts, same words, same timing... 😂
+                        Our mind Bluetooth just connects automatically. 💕
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHOTO 6 -->
+
+            <div class="photo-card">
+
+                <div class="photo-wrapper">
+
+                    <img
+                        src="images/memory-3.jpeg"
+                        alt="Best friend memory"
+                    >
+
+                </div>
+
+                <div class="photo-caption">
+
+                    <span>
+                        MEMORY 06
+                    </span>
+
+                    <h3>
+                        My Special Musu ❤️
+                    </h3>
+
+                    <p>
+                        From classmates to close friends... 🥹
+                        One beautiful year, so many memories,
+                        and a lifetime of friendship ahead. 🫶❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FINAL SECTION -->
+
+        <div class="memory-ending">
+
+            <div class="ending-heart">
+                ❤️
+            </div>
+
+            <h3>
+                And this is just the beginning...
+            </h3>
+
+            <p>
+                One year down, and hopefully a lifetime
+                of crazy memories to go. 🫶
+            </p>
+
+            <button id="finalBirthdayButton">
+                One Last Surprise → 🎁
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     FINAL BIRTHDAY SCREEN
+========================= -->
+
+<section class="final-screen" id="finalScreen">
+
+    <div class="final-content">
+
+        <div class="final-sparkles">
+            ✨ 🎉 ✨
+        </div>
+
+        <p class="final-small-title">
+            THE SURPRISE ISN'T OVER YET
+        </p>
+
+        <h1>
+            Happy Birthday,
+            <span>Muskan!</span> 🎂❤️
+        </h1>
+
+        <div class="final-cake">
+            🎂
+        </div>
+
+        <p class="final-message">
+
+            Hey Musu, ❤️
+
+            If you've reached this page,
+            congratulations... you survived all my
+            little surprises. 😂
+
+            <br><br>
+
+            But honestly, the biggest surprise is
+            how a friendship that started so simply
+            became something so special. 🥹❤️
+
+            <br><br>
+
+            From our random talks and crazy moments
+            to sharing food, going out together,
+            and understanding each other without
+            even saying a word...
+
+            <br><br>
+
+            I hope we keep collecting stupid,
+            crazy and beautiful memories together
+            for a very, very long time. 🫶
+
+            <br><br>
+
+            Happy Birthday, Musu! 🎂💗
+
+        </p>
+
+
+        <div class="final-wish">
+
+            May you always stay happy,
+            keep singing,
+            keep smiling,
+
+            <br>
+
+            and keep being my favourite pagal. 😂❤️
+
+        </div>
+
+
+        <div class="final-signature">
+
+            With lots of love,
+
+            <strong>
+                Archu ❤️
+            </strong>
+
+        </div>
+
+
+        <button
+            id="replayButton"
+            class="replay-button"
+        >
+            Replay Our Story ↻
+        </button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
